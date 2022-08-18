@@ -23,11 +23,11 @@ const Header = ({ siteTitle }) =>
       </div>
     </div>
     <div id="menu">
-      <p>Home</p>
-      <p>About me</p>
-      <p>Projects</p>
-      <p>Posters</p>
-      <p>Let's Talk</p>
+      <Link to="/" className="active-link nav-link">Home <span></span></Link>
+      <Link to="/about" className="nav-link">About me <span></span></Link>
+      <Link to="/projects" className="nav-link">Projects <span></span></Link>
+      <Link to="/posters" className="nav-link">Posters <span></span></Link>
+      <Link to="/contact" className="nav-link">Let's Talk✌🏼 <span></span></Link>
     </div>
   </header>
 
