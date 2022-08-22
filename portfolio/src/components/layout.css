@@ -42,7 +42,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-background);
   background-image: url("../images/background.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -424,6 +424,27 @@ width: 30%;
     position: inherit;
     top: 55%;
 }
+#poster-preview {
+  position: absolute;
+  top: 60%;
+  left: -75px;
+  transition: all .4s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+#poster-preview > p {
+  font-size: 0px;
+  padding: 0 30px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+#poster-preview:hover {
+  left: 25px;
+}
+#poster-preview:hover > p {
+  font-size: var(--font-sm);
+}
 #wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
@@ -487,5 +508,12 @@ width: 30%;
 @media only screen and (max-width: 1500px) {
   #social-with-text > p {
       display: none;
+    }
+    #poster-preview > p {
+      opacity: 0;
+      transition: all .4s ease;
+    }
+    #poster-preview:hover > p {
+      opacity: 1;
     }
 }

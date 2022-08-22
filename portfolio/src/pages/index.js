@@ -60,6 +60,20 @@ const IndexPage = () => (
       
       
     </div>
+    <div id="poster-preview">
+      <Link to="/posters">
+      <StaticImage
+          src="../images/WhyBother.jpg"
+          loading="eager"
+          width={150}
+          quality={100}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          />
+      </Link>
+        <p>👈🏼 See my Posters</p>
+
+    </div>
   </Layout>
 )
 
