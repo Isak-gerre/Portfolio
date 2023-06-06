@@ -268,4 +268,85 @@
 	.skills {
 		width: 30px;
 	}
+	@media (min-width: 767px) and (max-width: 1289px) {
+		section {
+			grid-template-columns: 100%;
+			padding: 0 2rem;
+			gap: 3rem;
+		}
+		#hero_text_container {
+			height: fit-content;
+			position: relative;
+			top: 0;
+		}
+		#static {
+			height: fit-content;
+		}
+		.scrolled {
+			top: 0% !important;
+		}
+		img {
+			position: absolute;
+			width: 400px;
+			top: 4%;
+			right: 5%;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		section {
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(2);
+			padding: 0 2rem;
+		}
+		#hero_text_container {
+			height: fit-content;
+			position: relative;
+			top: 0;
+		}
+		#static {
+			height: fit-content;
+		}
+		.scrolled {
+			top: 0% !important;
+		}
+		h1 {
+			font-weight: 800;
+			font-size: 36px;
+			line-height: 30px;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+		}
+		h2 {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 24px;
+		}
+		p {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 25px;
+		}
+		.company {
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 176%;
+			letter-spacing: 0.03em;
+		}
+		.position {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 176%;
+			letter-spacing: 0.03em;
+
+			color: #70706f;
+		}
+		.desc,
+		.item {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 176%;
+
+			letter-spacing: 0.03em;
+		}
+	}
 </style>

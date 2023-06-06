@@ -67,4 +67,12 @@
 			transform: translateX(0%);
 		}
 	}
+	@media (min-width: 767px) and (max-width: 1023px) {
+	}
+	@media screen and (max-width: 767px) {
+		p {
+			font-size: 50px;
+			height: 50px;
+		}
+	}
 </style>

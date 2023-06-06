@@ -61,6 +61,8 @@
 		align-items: center;
 		gap: 5rem;
 		padding: 10rem;
+		margin: 0 auto;
+		max-width: 1400px;
 	}
 	#read_cv_text {
 		font-weight: 800;
@@ -97,5 +99,29 @@
 	}
 	img {
 		width: 100%;
+	}
+	@media (min-width: 767px) and (max-width: 1023px) {
+	}
+	@media screen and (max-width: 767px) {
+		h4 {
+			font-size: 18px;
+		}
+		#read_cv_text {
+			font-size: 2em;
+		}
+		#read_cv {
+			padding: 2rem;
+			gap: 2rem;
+		}
+		#colorful {
+			font-size: 2.5rem;
+		}
+		#poster_container {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+		}
+		#photo_container {
+			grid-template-columns: repeat(3, 1fr);
+		}
 	}
 </style>

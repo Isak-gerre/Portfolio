@@ -5,6 +5,7 @@
 	import BingyBG from '$lib/assets/BingyBG.png';
 
 	import Button from './Button.svelte';
+	import Skill from './Skill.svelte';
 
 	let projects = [
 		{
@@ -15,6 +16,7 @@
 				short: 'Webpage for my startup',
 				long: 'I created a dedicated webpage my start-up, HIVE Malmö, an organization run by students, for students. Recognizing the immense talent and potential among university students today, we at HIVE envision a future where the gap between media students and the industry in Malmö no longer exists. Our goal is to build strong bridges that bring together students and businesses, driving the industry forward collectively.'
 			},
+			skills_used: ['SvelteKit', 'Firebase', 'Figma', 'Firebase Hosting'],
 			img: HiveMalmo,
 			bg: HiveBG
 		},
@@ -26,6 +28,7 @@
 				short: 'Movie Browsing App',
 				long: 'I developed a dynamic web application that allows users to browse and create personalized lists of movies. The project aims to enhance the movie-watching experience by providing a convenient platform to discover new films and curate customized lists for future reference.'
 			},
+			skills_used: ['PHP', 'API', 'Figma', 'JavaScript', 'CSS/SCSS'],
 			img: Bingy,
 			bg: BingyBG
 		}
@@ -70,7 +73,12 @@
 						</svg>
 					</a>
 					<p class="desc_long">{project.description.long}</p>
-					<Button text="Read more" />
+					<p class="skills_used">Skills used</p>
+					<div id="skills_container">
+						{#each project.skills_used as skill}
+							<Skill text={skill} />
+						{/each}
+					</div>
 				</div>
 				<div id="project_image_container">
 					<img src={project.img} alt="" />
@@ -100,6 +108,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 3rem;
+		margin: 0 auto;
+		max-width: 1400px;
 	}
 	#project_container {
 		position: relative;
@@ -120,6 +130,11 @@
 		gap: 1rem;
 		padding: 3rem;
 	}
+	#skills_container {
+		display: flex;
+		flex-direction: row;
+		gap: 5px;
+	}
 	.title {
 		font-weight: 700;
 		font-size: 28px;
@@ -136,10 +151,10 @@
 		line-height: 150%;
 	}
 	#project_container:hover img {
-		transform: scale(0.82) translate(-20%, -5%);
+		transform: scale(1.02);
 	}
 	img {
-		transform: scale(0.8) translate(-20%, -5%);
+		width: 80%;
 		transition: all 0.3s ease-out;
 	}
 	#read_cv {
@@ -163,5 +178,65 @@
 	}
 	svg {
 		margin-left: 4px;
+	}
+	#project_image_container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem 0;
+	}
+	@media (min-width: 767px) and (max-width: 1023px) {
+		#projects_container {
+			padding: 4rem;
+		}
+		img {
+			width: 90%;
+		}
+		#project_container:hover img {
+			transform: scale(1.02);
+		}
+	}
+	@media screen and (max-width: 767px) {
+		h4 {
+			font-size: 18px;
+		}
+		#projects_container {
+			padding: 2rem;
+		}
+		#project_container {
+			grid-template-columns: 100%;
+			grid-template-rows: repeat(2, 50%);
+		}
+		#project_text_container {
+			grid-row: 2/3;
+			padding: 1rem;
+			width: 100%;
+		}
+		img {
+			transform: scale(1);
+			width: 100%;
+			padding: 1rem;
+		}
+		#project_container:hover img {
+			transform: scale(1) translate(0%, 0%);
+		}
+		.title {
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 20px;
+		}
+		.desc_short {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 15px;
+		}
+		.desc_long {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 150%;
+		}
+		#read_cv_text {
+			font-size: 2em;
+		}
 	}
 </style>

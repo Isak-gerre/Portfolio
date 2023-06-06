@@ -9,7 +9,7 @@
 			<p>Available for <span id="colorful">work</span>, don't hesitate to write me an email!</p>
 		</div>
 		<div id="footer_hero_button">
-			<Button bg="colorful" />
+			<Button bg="colorful" href="mailto:isak.gerre@gmail.com" />
 		</div>
 	</div>
 	<Navigation />
@@ -52,5 +52,16 @@
 	}
 	#copyright_container > p {
 		margin: 2rem;
+	}
+	@media (min-width: 767px) and (max-width: 1023px) {
+	}
+	@media screen and (max-width: 767px) {
+		#copyright_container > p {
+			font-size: 0.7rem;
+		}
+		#footer_hero_text {
+			font-size: 2em;
+			padding: 2rem;
+		}
 	}
 </style>

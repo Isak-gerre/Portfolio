@@ -1,11 +1,13 @@
 <script>
 	export let text = "Let's Talk!👋🏼";
+	export let href = '/cv';
+	export let target = '';
 	export let bg;
 </script>
 
 <div id="button_with_background">
 	<div id="button" class={bg}>
-		<p>{text}</p>
+		<a {href} {target}>{text}</a>
 	</div>
 </div>
 
@@ -27,7 +29,7 @@
 		width: fit-content;
 		cursor: pointer;
 	}
-	#button:hover > p {
+	#button:hover > a {
 		transform: scale(1.05);
 		z-index: 1;
 	}
@@ -44,9 +46,19 @@
 		filter: blur(20px);
 		border-radius: 10px;
 	}
-	#button > p {
+	#button > a {
 		color: white;
 		width: fit-content;
 		transition: all 0.3s ease-out;
+	}
+	@media (min-width: 767px) and (max-width: 1023px) {
+	}
+	@media screen and (max-width: 767px) {
+		a {
+			font-size: 11px;
+		}
+		#button {
+			padding: 0.5rem 1rem;
+		}
 	}
 </style>
