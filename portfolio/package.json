@@ -21,7 +21,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"firebase": "^9.23.0",
+		"@splinetool/react-spline": "^2.2.6",
+		"@splinetool/runtime": "^0.9.384",
+		"firebase": "^8.6.8",
 		"svelte-hamburgers": "^4.0.1",
 		"svelte-inview": "^4.0.0",
 		"svelte-media-queries": "^1.5.4"
