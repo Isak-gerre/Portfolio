@@ -3,15 +3,29 @@
 	import HiveBG from '$lib/assets/HiveBG.png';
 	import Bingy from '$lib/assets/Bingy.png';
 	import BingyBG from '$lib/assets/BingyBG.png';
+	import Gameflix from '$lib/assets/Gameflix.png';
+	import GameflixBG from '$lib/assets/GameflixBG.png';
 
 	import Button from './Button.svelte';
 	import Skill from './Skill.svelte';
 
 	let projects = [
 		{
+			title: 'Gameflix.',
+			href: 'https://gameflix-e4sd9jlp5-isak-gerre.vercel.app',
+			internal_href: 'https://gameflix-e4sd9jlp5-isak-gerre.vercel.app',
+			description: {
+				short: 'Next.js project',
+				long: 'I created a web application built using Next.js, designed to provide gamers with an immersive and seamless browsing experience for video games.'
+			},
+			skills_used: ['Next.js', 'Vercel', 'Figma', 'css'],
+			img: Gameflix,
+			bg: GameflixBG
+		},
+		{
 			title: 'hivemalmo.se',
 			href: 'https://hivemalmo.se',
-			internal_href: '/projects/hivemalmo',
+			internal_href: 'https://hivemalmo.se',
 			description: {
 				short: 'Webpage for my startup',
 				long: 'I created a dedicated webpage my start-up, HIVE Malmö, an organization run by students, for students. Recognizing the immense talent and potential among university students today, we at HIVE envision a future where the gap between media students and the industry in Malmö no longer exists. Our goal is to build strong bridges that bring together students and businesses, driving the industry forward collectively.'
@@ -23,7 +37,7 @@
 		{
 			title: 'bingy.se',
 			href: 'https://bingy.se',
-			internal_href: '/projects/bingy',
+			internal_href: 'https://bingy.se',
 			description: {
 				short: 'Movie Browsing App',
 				long: 'I developed a dynamic web application that allows users to browse and create personalized lists of movies. The project aims to enhance the movie-watching experience by providing a convenient platform to discover new films and curate customized lists for future reference.'
@@ -57,7 +71,7 @@
 			>
 				<div id="project_text_container">
 					<p class="desc_short">{project.description.short}</p>
-					<a class="title" href={project.internal_href}>
+					<a class="title" href={project.internal_href} traget="_blank">
 						{project.title}
 						<svg
 							width="14"

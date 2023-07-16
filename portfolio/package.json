@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"firebase": "^9.23.0",
 		"svelte-hamburgers": "^4.0.1",
 		"svelte-inview": "^4.0.0",
 		"svelte-media-queries": "^1.5.4"

@@ -7,6 +7,7 @@
 	let workExp;
 	let edu;
 	let skills;
+	let feats;
 	let y = 0;
 
 	let cv = {
@@ -22,6 +23,12 @@
 				position: 'Project Manager and Web Developer',
 				duration: 'June 2022 - Present',
 				desc: "As a Project Manager and Lead Web Developer for HIVE Malmö, I have been actively involved in developing and driving forward the HIVE Malmö project, in collaboration with my peers. The project's mission is to establish a stronger connection between students and the business community, and I have played a key role in its success. My responsibilities include overseeing project activities, coordinating with team members, and managing web development tasks to ensure the project's objectives are met. Through HIVE Malmö, we aim to create a vibrant platform that bridges the gap between academia and industry."
+			},
+			{
+				company: 'Malmö University - Malmö',
+				position: 'Amanuens - Teacher assistant',
+				duration: 'January 2021 - June 2021 & January 2022 - June 2022',
+				desc: 'Throughout two semesters of my academic journey, I successfully secured the role of a teaching assistant for two distinct programming courses. In this esteemed position, I had the opportunity to deliver informative lectures on various programming concepts, assist students in resolving queries, and meticulously evaluate examinations. Additionally, I actively engaged in and taught two comprehensive day-long lectures on the fascinating realm of 3D animation within Blender.'
 			},
 			{
 				company: 'Strandhuset - Helsingborg',
@@ -98,6 +105,13 @@
 					'German - Basic knowledge'
 				]
 			}
+		],
+		feats: [
+			{
+				title: 'Speaker at seminar about talent retention in Malmö',
+				duration: 'March 2023',
+				desc: 'In my role as the founder and project manager of HIVE Malmö, I had the privilege of gathering valuable experience and insights from both students and the workforce regarding the student-workforce relationship in the city of Malmö. This enriching journey led to a remarkable opportunity where I was graciously invited by Malmö Tillväxtkommisionen and Studentklåren Malmö to share my knowledge at a seminar focused on talent retention in Malmö.'
+			}
 		]
 	};
 </script>
@@ -112,6 +126,7 @@
 			<p><span class:workExp /> Work Experience</p>
 			<p><span class:edu /> Education</p>
 			<p><span class:skills /> Skills</p>
+			<p><span class:feats /> Feats</p>
 		</div>
 	</div>
 	<div id="moving">
@@ -149,6 +164,7 @@
 					</div>
 				{/each}
 			</div>
+			<p class="category">Skills</p>
 			<div
 				class="skills_wrapper"
 				use:inview={{ unobserveOnEnter: false, rootMargin: '-20%' }}
@@ -162,6 +178,22 @@
 						{#each skill.skills as item}
 							<p class="item">{item}</p>
 						{/each}
+					</div>
+				{/each}
+			</div>
+			<p class="category">Feats</p>
+			<div
+				id="feats_container"
+				use:inview={{ unobserveOnEnter: false, rootMargin: '-20%' }}
+				on:change={({ detail }) => {
+					feats = detail.inView ? true : false;
+				}}
+			>
+				{#each cv.feats as work}
+					<div class="item_container">
+						<p class="company">{work.title}</p>
+						<p class="position">{work.duration}</p>
+						<p class="desc">{work.desc}</p>
 					</div>
 				{/each}
 			</div>
@@ -209,7 +241,8 @@
 		font-size: 20px;
 		line-height: 25px;
 	}
-	.item_container {
+	.item_container,
+	.skills_wrapper {
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
@@ -265,7 +298,8 @@
 	}
 	.workExp,
 	.edu,
-	.skills {
+	.skills,
+	.feats {
 		width: 30px;
 	}
 	@media (min-width: 767px) and (max-width: 1289px) {

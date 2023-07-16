@@ -5,9 +5,11 @@
 	import Banner from '../lib/components/Banner.svelte';
 	import PostersAndPhotos from '../lib/components/PostersAndPhotos.svelte';
 	import { fade } from 'svelte/transition';
+	import { views } from '../functions';
 
-	onMount(() => {
+	onMount(async () => {
 		scrollTo(0, 0);
+		await views();
 	});
 </script>
 

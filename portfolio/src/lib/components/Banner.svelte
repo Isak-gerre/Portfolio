@@ -5,6 +5,8 @@
 		skills: [
 			'SvelteKit',
 			'JavaScript',
+			'next.js',
+			'react',
 			'HTML',
 			'CSS/SCSS',
 			'Node.js',

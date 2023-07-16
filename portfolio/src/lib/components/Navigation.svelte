@@ -25,11 +25,10 @@
 					<li><a href="/">Home</a></li>
 					<li><a href="/cv">About me</a></li>
 					<li>
-						<a
-							href="https://www.linkedin.com/in/isak-gerre-0754a5227/"
-							target="
-						">LinkedIn</a
-						>
+						<a href="https://www.linkedin.com/in/isak-gerre-0754a5227/" target="_blank">LinkedIn</a>
+					</li>
+					<li>
+						<a href="https://github.com/Isak-gerre" target="_blank">GitHub</a>
 					</li>
 					<li><a href="mailto:isak.gerre@gmail.com">Let's Talk!👋🏼</a></li>
 				</ul>
@@ -42,7 +41,11 @@
 					<a href="/cv" on:click={() => (open = !open)}>About Me</a>
 					<a
 						href="https://www.linkedin.com/in/isak-gerre-0754a5227/"
+						target="_blank"
 						on:click={() => (open = !open)}>LinkedIn</a
+					>
+					<a href="https://github.com/Isak-gerre" target="_blank" on:click={() => (open = !open)}
+						>GitHub</a
 					>
 					<a href="mailto:isak.gerre@gmail.com" on:click={() => (open = !open)}>Let's Talk!👋🏼</a>
 				</div>
