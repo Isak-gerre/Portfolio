@@ -23,7 +23,8 @@
 			<div id="menu">
 				<ul>
 					<li><a href="/">Home</a></li>
-					<li><a href="/cv">About me</a></li>
+					<li><a href="/about">About me</a></li>
+					<li><a href="/cv">CV</a></li>
 					<li>
 						<a href="https://www.linkedin.com/in/isak-gerre-0754a5227/" target="_blank">LinkedIn</a>
 					</li>
@@ -38,7 +39,8 @@
 			<aside class:open>
 				<div id="mobile">
 					<a href="/" on:click={() => (open = !open)}>Home</a>
-					<a href="/cv" on:click={() => (open = !open)}>About Me</a>
+					<a href="/about" on:click={() => (open = !open)}>About Me</a>
+					<a href="/cv" on:click={() => (open = !open)}>CV</a>
 					<a
 						href="https://www.linkedin.com/in/isak-gerre-0754a5227/"
 						target="_blank"

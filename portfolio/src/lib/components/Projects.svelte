@@ -5,11 +5,25 @@
 	import BingyBG from '$lib/assets/BingyBG.png';
 	import Gameflix from '$lib/assets/Gameflix.png';
 	import GameflixBG from '$lib/assets/GameflixBG.png';
+	import SolkollBG from '$lib/assets/SolkollBG.png';
+	import Solkoll from '$lib/assets/Solkoll.png';
 
 	import Button from './Button.svelte';
 	import Skill from './Skill.svelte';
 
 	let projects = [
+		{
+			title: 'Solkoll.se',
+			href: 'https://solkoll.se',
+			internal_href: 'https://solkoll.se',
+			description: {
+				short: 'CRM and Documentation System',
+				long: 'As the sole developer and maintainer of the application, I am responsible for designing and implementing intuitive user interfaces and innovative features, including interactive document functionality, a string layout builder, and PDF generation capabilities. Collaboration with the backend development team is a critical aspect of my role, ensuring seamless integration of frontend components with backend services and databases.'
+			},
+			skills_used: ['Next.js', 'TypeScript', 'AWS', 'SST', 'Figma', 'Material UI'],
+			img: Solkoll,
+			bg: SolkollBG
+		},
 		{
 			title: 'Gameflix.',
 			href: 'https://gameflix-e4sd9jlp5-isak-gerre.vercel.app',

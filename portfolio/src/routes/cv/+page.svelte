@@ -13,6 +13,12 @@
 	let cv = {
 		we: [
 			{
+				company: 'Institutet för solenergikvalitet - Malmö',
+				position: 'Frontend Developer',
+				duration: 'July 2023 - Present',
+				desc: 'As a Frontend Developer at IFSEK, I oversee the development and maintenance of a sophisticated in-house Customer Relationship Management (CRM) and document management application. This role allows me to leverage my expertise in frontend development to craft user-centric and visually engaging web applications that meet and exceed client expectations. As the sole developer and maintainer of the application, I am responsible for designing and implementing intuitive user interfaces and innovative features, including interactive document functionality, a string layout builder, and PDF generation capabilities. Collaboration with the backend development team is a critical aspect of my role, ensuring seamless integration of frontend components with backend services and databases. This position has been instrumental in refining my skills in frontend development, problem-solving, and cross-functional collaboration. It has also provided opportunities to expand my expertise into backend development, enhancing my technical versatility. Through my contributions, I strive to deliver high-quality solutions that align with IFSEK’s mission of creating exceptional digital tools for its clients.'
+			},
+			{
 				company: 'Sjöbergska Huset AB - Malmö',
 				position: 'Internship',
 				duration: 'January 2022 - June 2023',
@@ -41,19 +47,19 @@
 				position: 'Guest Experience Leader',
 				duration: 'October 2018 - October 2021',
 				desc: "As a Guest Experience Leader at McDonald's Väla and Stattena, I worked across all areas of the restaurant, with a primary focus on customer service. This involved warmly greeting guests, taking their orders at the cash register, assembling orders, and serving meals to customers. As a Guest Experience Leader, my main objective was to ensure that guests received excellent service, with a particular emphasis on providing a positive experience for children. I took pride in creating a welcoming and friendly atmosphere, addressing guest needs promptly, and resolving any issues to their satisfaction."
-			},
-			{
-				company: 'Dance Instructor - Helsingborg',
-				position: 'Dance Instructor',
-				duration: '2018 - Present',
-				desc: 'As a dance instructor, I specialized in teaching Latin American and Standard dances. During my time in this role, I shared my passion for dance and helped students develop their skills and technique in these dance styles. I created lesson plans, led group classes, and provided individualized instruction to ensure that each student received personalized attention and guidance. Through my teaching, I aimed to inspire a love for dance and foster a supportive learning environment where students could improve their dancing abilities and express themselves creatively.'
-			},
-			{
-				company: 'Publikvärd - Helsingborg',
-				position: 'Event Usher',
-				duration: '2016 - 2019',
-				desc: 'As a part-time event usher, I worked at various events such as HX 2017, Rock of the 80s, Joe Labero, and Antikmässan in Helsingborg. In this role, I was responsible for ensuring a smooth and enjoyable experience for the guests. My duties included directing and assisting guests at the events, answering their questions, and acting as a coordinator during emergencies or unforeseen situations. Additionally, I was entrusted with the responsibility of being a group leader, overseeing the activities and tasks of a team of ushers. Through my role as an event usher, I developed strong interpersonal skills, problem-solving abilities, and the capacity to handle high-pressure situations effectively.'
 			}
+			// {
+			// 	company: 'Dance Instructor - Helsingborg',
+			// 	position: 'Dance Instructor',
+			// 	duration: '2018 - Present',
+			// 	desc: 'As a dance instructor, I specialized in teaching Latin American and Standard dances. During my time in this role, I shared my passion for dance and helped students develop their skills and technique in these dance styles. I created lesson plans, led group classes, and provided individualized instruction to ensure that each student received personalized attention and guidance. Through my teaching, I aimed to inspire a love for dance and foster a supportive learning environment where students could improve their dancing abilities and express themselves creatively.'
+			// },
+			// {
+			// 	company: 'Publikvärd - Helsingborg',
+			// 	position: 'Event Usher',
+			// 	duration: '2016 - 2019',
+			// 	desc: 'As a part-time event usher, I worked at various events such as HX 2017, Rock of the 80s, Joe Labero, and Antikmässan in Helsingborg. In this role, I was responsible for ensuring a smooth and enjoyable experience for the guests. My duties included directing and assisting guests at the events, answering their questions, and acting as a coordinator during emergencies or unforeseen situations. Additionally, I was entrusted with the responsibility of being a group leader, overseeing the activities and tasks of a team of ushers. Through my role as an event usher, I developed strong interpersonal skills, problem-solving abilities, and the capacity to handle high-pressure situations effectively.'
+			// }
 		],
 		edu: [
 			{
@@ -81,16 +87,20 @@
 			{
 				title: 'Development',
 				skills: [
+					'Next.js',
+					'TypeScript',
+					'AWS',
+					'Vercel',
+					'SST',
+					'React',
+					'SvelteKit',
+					'JavaScript',
+					'Figma',
 					'HTML',
 					'CSS/SCSS',
-					'JavaScript',
-					'SvelteKit',
-					'VSCode',
-					'GitHub',
-					'Git',
-					'Insomnia',
 					'Node.js',
 					'Express',
+					'REST APIs',
 					'PHP',
 					'Firebase',
 					'MongoDB'

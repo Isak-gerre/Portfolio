@@ -7,7 +7,7 @@
 	<div id="hero_text_container">
 		<h1>Isak Gerre</h1>
 		<h2>Frontend Developer</h2>
-		<p>Crafting Engaging User Experiences with a love for developing with SvelteKit</p>
+		<p>Crafting Engaging User Experiences with a love for developing with Next.js</p>
 		<div id="hero_button">
 			<Button bg="colorful" href="mailto:isak.gerre@gmail.com" />
 		</div>
